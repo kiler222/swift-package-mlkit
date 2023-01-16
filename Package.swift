@@ -29,10 +29,10 @@ let package = Package(
         .binaryTarget(name: "MLKitObjectDetectionCommon", path: "MLKitObjectDetectionCommon.xcframework"),
         .binaryTarget(name: "MLKitObjectDetectionCustom", path: "MLKitObjectDetectionCustom.xcframework"),
         .binaryTarget(name: "MLKitImageLabelingCommon", path: "MLKitImageLabelingCommon.xcframework"),
-        .binaryTarget(name: "GoogleToolboxForMac", url: "https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/GoogleToolboxForMac.xcframework.zip", checksum: "6f2e01c3fada4c9a92f45cd83374716026cb5aebf4fed1f74bdd3eba9e9d83bc"),
+        .binaryTarget(name: "GoogleToolboxForMac", path: "GoogleToolboxForMac.xcframework.zip"),
         .binaryTarget(
-            name: "GoogleUtilitiesComponents", url: "https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/GoogleUtilitiesComponents.xcframework.zip", checksum: "e9b4e629a140234cee5f4da292219c32f3212fc1fce23c773043e10692abb14d"),
-        .binaryTarget(name: "Protobuf", url: "https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/Protobuf.xcframework.zip", checksum: "e411598ad55b7a74bdec956e67fd7e6b453fcd4267c0f7ccfdfad0952a220cbd"),
+            name: "GoogleUtilitiesComponents", path: "GoogleUtilitiesComponents.xcframework.zip"),
+        .binaryTarget(name: "Protobuf", path: "Protobuf.xcframework.zip"),
         .target(
             name: "Common",
             dependencies: [
