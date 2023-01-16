@@ -38,7 +38,7 @@ let package = Package(
             name: "Common",
             dependencies: [
                 "MLKitCommon",
-                "GoogleToolboxForMac",
+                "google-toolbox-for-mac",
                 "GoogleUtilitiesComponents",
                 "Protobuf",
                 .product(name: "GULAppDelegateSwizzler", package: "GoogleUtilities"),
