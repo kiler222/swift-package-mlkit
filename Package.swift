@@ -16,11 +16,12 @@ let package = Package(
         .package(url: "https://github.com/google/GoogleUtilities.git", from: "7.7.1"),
         .package(url: "https://github.com/google/gtm-session-fetcher.git", from: "1.7.2"),
         .package(url: "https://github.com/firebase/nanopb.git", .upToNextMinor(from: "2.30909.0")),
+        .package(url: "https://github.com/google/google-toolbox-for-mac.git", from: "2.3.2"),
     ],
     targets: [
-        .binaryTarget(name: "MLKitFaceDetection", url: "https://github.com/kiler222/MLKitPackage/releases/download/v0.0.3/MLKitFaceDetection.xcframework.zip", checksum: "63b4c5dfb316c708f604afe07ef9dff274de6c125db9444a8b492c6898e0a791"),
+        .binaryTarget(name: "MLKitFaceDetection", url: "https://github.com/kiler222/swift-package-mlkit/releases/download/v0.0.1-beta/MLKitFaceDetection.xcframework.zip", checksum: "63b4c5dfb316c708f604afe07ef9dff274de6c125db9444a8b492c6898e0a791"),
 
-        .binaryTarget(name: "MLKitVisionKit", url: "https://github.com/kiler222/MLKitPackage/releases/download/v0.0.3/MLKitVisionKit.xcframework.zip", checksum: "4d6be0151f429211472f8cb9df22769f6fd912ed8f9787697c38281a21db507b"),
+        .binaryTarget(name: "MLKitVisionKit", url: "https://github.com/kiler222/swift-package-mlkit/releases/download/v0.0.1-beta/MLKitVisionKit.xcframework.zip", checksum: "4d6be0151f429211472f8cb9df22769f6fd912ed8f9787697c38281a21db507b"),
 
         .binaryTarget(name: "MLKitCommon", path: "MLKitCommon.xcframework"),
         .binaryTarget(name: "MLImage", path: "MLImage.xcframework"),
