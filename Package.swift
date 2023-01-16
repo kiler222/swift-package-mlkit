@@ -30,7 +30,7 @@ let package = Package(
         .binaryTarget(name: "MLKitObjectDetectionCommon", path: "MLKitObjectDetectionCommon.xcframework"),
         .binaryTarget(name: "MLKitObjectDetectionCustom", path: "MLKitObjectDetectionCustom.xcframework"),
         .binaryTarget(name: "MLKitImageLabelingCommon", path: "MLKitImageLabelingCommon.xcframework"),
-        .binaryTarget(name: "GoogleToolboxForMac", path: "GoogleToolboxForMac.xcframework"),
+//        .binaryTarget(name: "GoogleToolboxForMac", path: "GoogleToolboxForMac.xcframework"),
         .binaryTarget(
             name: "GoogleUtilitiesComponents", path: "GoogleUtilitiesComponents.xcframework"),
         .binaryTarget(name: "Protobuf", path: "Protobuf.xcframework"),
