@@ -16,7 +16,6 @@ let package = Package(
         .package(url: "https://github.com/google/GoogleUtilities.git", from: "7.7.1"),
         .package(url: "https://github.com/google/gtm-session-fetcher.git", from: "1.7.2"),
         .package(url: "https://github.com/firebase/nanopb.git", .upToNextMinor(from: "2.30909.0")),
-        .package(url: "https://github.com/google/google-toolbox-for-mac.git", from: "2.3.2"),
     ],
     targets: [
         .binaryTarget(name: "MLKitFaceDetection", url: "https://github.com/kiler222/swift-package-mlkit/releases/download/v0.0.1-beta/MLKitFaceDetection.xcframework.zip", checksum: "63b4c5dfb316c708f604afe07ef9dff274de6c125db9444a8b492c6898e0a791"),
@@ -30,15 +29,15 @@ let package = Package(
         .binaryTarget(name: "MLKitObjectDetectionCommon", path: "MLKitObjectDetectionCommon.xcframework"),
         .binaryTarget(name: "MLKitObjectDetectionCustom", path: "MLKitObjectDetectionCustom.xcframework"),
         .binaryTarget(name: "MLKitImageLabelingCommon", path: "MLKitImageLabelingCommon.xcframework"),
-//        .binaryTarget(name: "GoogleToolboxForMac", path: "GoogleToolboxForMac.xcframework"),
+        .binaryTarget(name: "GoogleToolboxForMac", url: "https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/GoogleToolboxForMac.xcframework.zip", checksum: "6f2e01c3fada4c9a92f45cd83374716026cb5aebf4fed1f74bdd3eba9e9d83bc"),
         .binaryTarget(
-            name: "GoogleUtilitiesComponents", path: "GoogleUtilitiesComponents.xcframework"),
-        .binaryTarget(name: "Protobuf", path: "Protobuf.xcframework"),
+            name: "GoogleUtilitiesComponents", url: "https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/GoogleUtilitiesComponents.xcframework.zip", checksum: "e9b4e629a140234cee5f4da292219c32f3212fc1fce23c773043e10692abb14d"),
+        .binaryTarget(name: "Protobuf", url: "https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/Protobuf.xcframework.zip", checksum: "e411598ad55b7a74bdec956e67fd7e6b453fcd4267c0f7ccfdfad0952a220cbd"),
         .target(
             name: "Common",
             dependencies: [
                 "MLKitCommon",
-                "google-toolbox-for-mac",
+                "GoogleToolboxForMac",
                 "GoogleUtilitiesComponents",
                 "Protobuf",
                 .product(name: "GULAppDelegateSwizzler", package: "GoogleUtilities"),
